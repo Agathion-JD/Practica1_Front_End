@@ -1,17 +1,53 @@
 
+div.top{
+    background-color: black;
+    text-align: end;
+} 
+div.top p{
+    display: contents;
+    color: #F3F3F3;
+}
 nav{
     background-color: #F0A83E;
 }
 nav p{
     display: contents;
+}
+section img {
+    width: 100%;
+}
 
+div.menu-nav{
+    display: contents;
+    margin: 0%;
 }
 li{
     display: contents;
 }
-body .productos {
-    display: contents;
+div.menu-productos {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+div.menu-productos img {
+    margin-left: 35%;
+}
+div.menu-precios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 10%;
+}
+div.menu-imagenes{
+    display: flex;
+    justify-content: center;
+}
+div.menu-precios p{
+   margin-left: 10%;
+  
 }
 footer p{
+    margin-top: 5%;
     text-align: center;
 }
