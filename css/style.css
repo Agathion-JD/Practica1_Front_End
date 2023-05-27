@@ -1,53 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 
-div.top{
-    background-color: black;
-    text-align: end;
-} 
-div.top p{
-    display: contents;
-    color: #F3F3F3;
-}
-nav{
-    background-color: #F0A83E;
-}
-nav p{
-    display: contents;
-}
-section img {
-    width: 100%;
+* {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-div.menu-nav{
-    display: contents;
-    margin: 0%;
+.header-container-top {
+  background-color: #222222;
+  color: #f3f3f3;
+  font-weight: 400;
 }
-li{
-    display: contents;
+
+.header-lista {
+  list-style: none;
 }
-div.menu-productos {
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+
+.header-container-bottom {
+  background-color: #f0a83e;
 }
-div.menu-productos img {
-    margin-left: 35%;
+
+.logo-header {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.44px;
+  color: #ffffff;
 }
-div.menu-precios{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-right: 10%;
+
+.logo-first {
+  color: #3c2313;
 }
-div.menu-imagenes{
-    display: flex;
-    justify-content: center;
+
+.nav-container {
+  list-style: none;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 13px;
 }
-div.menu-precios p{
-   margin-left: 10%;
-  
+
+.banner {
+  background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+  background-size: cover;
+  height: 409px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-footer p{
-    margin-top: 5%;
-    text-align: center;
+
+.banner div {
+  margin-right: 2%;
+  text-align: center;
+  line-height: 2em;
+}
+
+.banner-title {
+  font-size: 30px;
+  color: #3c2313;
+  background-color: #ffffff;
+}
+
+.banner p {
+  color: #3c2313;
+  font-size: 16px;
+}
+
+.banner a {
+  background-color: #f0a83e;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.products-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.products-nav img {
+  height: 71px;
+}
+
+.products-nav .titulo {
+  color: #3c2313;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+
+.products-nav .opciones {
+  color: #666666;
+  font-size: 15px;
+  text-align: center;
+}
+
+.products-menu {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.products-menu p {
+  color: #3c2313;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.products-menu span {
+  color: #f0a83e;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.footer-top {
+  color: #ffffff;
+  background-color: #3c2313;
+}
+
+.logo-footer {
+  float: right;
+  margin-top: 130px;
+    margin-right: 74px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.44px;
+  color: #ffffff;
+}
+
+.logo-second {
+  color: #f0a83e;
+}
+
+.footer-bottom {
+  color: #ffffff;
+  background-color: #222222;
+  text-align: center;
 }
