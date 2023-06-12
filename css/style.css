@@ -6,37 +6,80 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .header-container-top {
   display: flex;
+  font-size: 10px;
   justify-content: space-between;
+  padding: 5px 40px 5px 60px;
   background-color: #222222;
   color: #f3f3f3;
   font-weight: 400;
 }
-
 .header-lista {
   display: flex;
   list-style: none;
 }
-
+.header-lista li {
+  padding: 0px 7px;
+}
 .header-container-bottom {
   display: flex;
+  padding: 15px 30px 15px 30px;
   justify-content: space-between;
   background-color: #f0a83e;
 }
-
 .logo-header {
   font-size: 20px;
   font-weight: 700;
   line-height: 23.44px;
   color: #ffffff;
 }
-
 .logo-first {
   color: #3c2313;
 }
+.menutoggle {
+  display: none;
+  position: relative;
+}
 
+.menutoggle input {
+  display: none;
+}
+
+.menutoggle label {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menutoggle label i {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
+
+.menutoggle input:checked + label i:before {
+  content: "\f00d";
+}
+
+.menutoggle input:checked ~ .menu-list {
+  display: block;
+}
+
+.menu-list {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-list li {
+  list-style: none;
+}
 .nav-container {
   display: flex ;
   list-style: none;
@@ -44,101 +87,144 @@
   font-weight: 400;
   font-size: 13px;
 }
-
+.nav-container li {
+  display: flex;
+  align-items: center;
+  padding: 0px 7px;
+}
+.nav-container img {
+  padding: 5px;
+}
 .banner {
   background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
   background-size: cover;
-  height: 409px;
+  height: 400px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-
 .banner div {
   margin-right: 2%;
   text-align: center;
   line-height: 2em;
 }
-
 .banner-title {
+  border-radius: 5px;
+  padding: 5px;
   font-size: 30px;
   color: #3c2313;
   background-color: #ffffff;
 }
-
 .banner p {
   color: #3c2313;
   font-size: 16px;
 }
-
 .banner a {
+  padding: 8px;
+  border-radius: 5px;
   background-color: #f0a83e;
   color: #ffffff;
   font-size: 16px;
 }
-
 .products-nav {
   display: flex;
+  margin-top: 10px;
   flex-direction: column;
 }
-
 .products-nav img {
   height: 71px;
 }
-
-.products-nav .titulo {
+.products-nav  {
   color: #3c2313;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
 }
-
-.products-nav .opciones {
+.products-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
   color: #666666;
   font-size: 15px;
   text-align: center;
 }
-
+.products-nav li {
+  padding: 10px;
+}
 .products-menu {
   display: flex;
   justify-content: center;
   text-align: center;
 }
-
 .products-menu p {
   color: #3c2313;
   font-weight: 500;
   font-size: 15px;
 }
-
 .products-menu span {
   color: #f0a83e;
   font-weight: 500;
   font-size: 15px;
 }
-
 .footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #ffffff;
   background-color: #3c2313;
-  
 }
-
+.conteiner-left>div {
+  padding: 10px 50px;
+  display: flex;
+  gap: 25px;
+  height: 70px;
+}
+.conteiner-right {
+  margin-right: 70px;
+}
 .logo-footer {
-  float: right;
-  margin-top: 130px;
-    margin-right: 74px;
   font-size: 20px;
   font-weight: 700;
   line-height: 23.44px;
   color: #ffffff;
 }
-
 .logo-second {
   color: #f0a83e;
 }
-
 .footer-bottom {
   color: #ffffff;
   background-color: #222222;
   text-align: center;
+}
+
+/*** Responsive */
+@media screen and (max-width: 720px) {
+  .products-menu{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 620px) {
+  .footer-top{
+  flex-direction: column-reverse;
+  }
+  .menutoggle {
+    display: inline-block;
+  }
+  .menutoggle i {
+    margin-left: 90px;
+  }
+  .menutoggle {
+    display:inline;
+  }
+  .nav-container {
+    display: none;
+  }
+  .conteiner-right {
+    margin:0;
+  }
+}
+@media (max-width: 400px) {
+  .header-container-bottom {
+    justify-content: flex-start;
+  }
 }
